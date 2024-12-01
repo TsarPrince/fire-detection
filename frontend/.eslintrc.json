@@ -1,0 +1,8 @@
+{
+  // allow any in ts
+  "rules": {
+    "@typescript-eslint/no-explicit-any": "warn"
+  },
+
+  "extends": ["next/core-web-vitals", "next/typescript"]
+}
