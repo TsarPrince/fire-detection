@@ -2,7 +2,7 @@
 
 1 Setup required files
 
-- Download training data, scaler and models from https://drive.google.com/drive/folders/1yGgL73EAgUJj2yFVHV6dmiIM908_4UHA?usp=drive_link
+- Download training data, scaler and models from https://drive.google.com/drive/folders/1yGgL73EAgUJj2yFVHV6dmiIM908_4UHA
 - Place `smoke_detection_iot.csv` in `training\input\smoke-detection-dataset` folder
 - Place scaler and models in `training\out` folder
 - Update paths in `api\ml_models\utils.py`
