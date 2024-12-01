@@ -1,14 +1,18 @@
 ## Steps to run
 
+1 Setup required files
+
 - Download training data, scaler and models from https://drive.google.com/drive/folders/1yGgL73EAgUJj2yFVHV6dmiIM908_4UHA?usp=drive_link
 - Place `smoke_detection_iot.csv` in `training\input\smoke-detection-dataset` folder
 - Place scaler and models in `training\out` folder
 - Update paths in `api\ml_models\utils.py`
 
+2 Run backend
+
 - `python -m venv venv`
 - `venv\Scripts\activate`
-- `pip install -r requirements.txt`
 - `cd api`
+- `pip install -r requirements.txt`
 - Start backend server: `py manage.py runserver`
 - Send POST request with curl:
 
@@ -40,3 +44,15 @@ curl -X POST http://localhost:8000/api/ml/predict/ \
 | Fire Detected            | No Fire Detected         |
 | ------------------------ | ------------------------ |
 | ![alt text](image-2.png) | ![alt text](image-1.png) |
+
+3 Run frontend
+
+- `cd ../frontend`
+- `yarn`
+- `yarn dev`
+
+## Output
+
+| Fire Detected            | No Fire Detected         |
+| ------------------------ | ------------------------ |
+| ![alt text](image-4.png) | ![alt text](image-3.png) |
