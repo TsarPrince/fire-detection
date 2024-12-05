@@ -87,22 +87,28 @@ export const FireAlarmForm: React.FC = () => {
 
         <div className="space-y-4">
           <h2 className="text-2xl font-bold mb-4">Sensor Input Details</h2>
-          {(Object.keys(sensorData) as Array<keyof SensorData>)
-            .filter((key) =>
-              [
-                "Temperature[C]",
-                "Humidity[%]",
-                "TVOC[ppb]",
-                "eCO2[ppm]",
-                "Pressure[hPa]",
-              ].includes(key)
-            )
-            .map((field) => (
-              <SensorFieldDescription
-                key={field}
-                fieldName={field as keyof typeof SENSOR_DESCRIPTIONS}
-              />
-            ))}
+          {/* random_forest_explainability_analysis */}
+          {[
+            // "CNT",
+            // "UTC",
+            "Pressure[hPa]",
+            "TVOC[ppb]",
+            "Raw Ethanol",
+            "Humidity[%]",
+            "Raw H2",
+            "NC0.5",
+            "Temperature[C]",
+            // "PM1.0",
+            // "PM2.5",
+            // "eCO2[ppm]",
+            // "NC1.0",
+            // "NC2.5",
+          ].map((field) => (
+            <SensorFieldDescription
+              key={field}
+              fieldName={field as keyof typeof SENSOR_DESCRIPTIONS}
+            />
+          ))}
         </div>
       </div>
 
