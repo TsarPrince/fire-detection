@@ -15,8 +15,6 @@ import {
 import {
   BadgeAlert,
   BadgeCheck,
-  CircleCheck,
-  CircleX,
   Flame,
   ShieldCheck,
   Timer,
