@@ -162,9 +162,10 @@ const Realtime = () => {
                 </TableCell>
                 <TableCell>
                   {reading.processed_at ? (
-                    new Date(reading.processed_at) -
-                    new Date(reading.created_at) +
-                    "ms"
+                    Math.abs(
+                      new Date(reading.created_at) -
+                        new Date(reading.processed_at)
+                    ) + "ms"
                   ) : (
                     <Timer className="text-gray-500" />
                   )}
