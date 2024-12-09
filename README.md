@@ -79,38 +79,6 @@ curl -X POST http://localhost:8000/api/ml/predict/ \
 
 <hr/>
 
-## Fuzzy Rulebase
-
-| index | Smoke Sensor | Temperature Sensor | Flame Sensor | Fire   |
-| ----- | ------------ | ------------------ | ------------ | ------ |
-| 1     | Low          | Cold               | Far          | Low    |
-| 2     | Low          | Cold               | Not Far      | Low    |
-| 3     | Low          | Cold               | Near         | Low    |
-| 4     | Low          | Normal             | Far          | Low    |
-| 5     | Low          | Normal             | Not Far      | Low    |
-| 6     | Low          | Normal             | Near         | Low    |
-| 7     | Low          | Hot                | Far          | Low    |
-| 8     | Low          | Hot                | Not Far      | Low    |
-| 9     | Low          | Hot                | Near         | Medium |
-| 10    | Medium       | Cold               | Far          | Low    |
-| 11    | Medium       | Cold               | Not Far      | Low    |
-| 12    | Medium       | Cold               | Near         | Low    |
-| 13    | Medium       | Normal             | Far          | Low    |
-| 14    | Medium       | Normal             | Not Far      | Low    |
-| 15    | Medium       | Normal             | Near         | Low    |
-| 16    | Medium       | Hot                | Far          | Medium |
-| 17    | Medium       | Hot                | Not Far      | Medium |
-| 18    | Medium       | Hot                | Near         | High   |
-| 19    | High         | Cold               | Far          | Medium |
-| 20    | High         | Cold               | Not Far      | Medium |
-| 21    | High         | Cold               | Near         | High   |
-| 22    | High         | Normal             | Far          | Medium |
-| 23    | High         | Normal             | Not Far      | High   |
-| 24    | High         | Normal             | Near         | High   |
-| 25    | High         | Hot                | Far          | High   |
-| 26    | High         | Hot                | Not Far      | High   |
-| 27    | High         | Hot                | Near         | High   |
-
 ## Inference
 
 Fuzzy inference membership functions:
